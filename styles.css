@@ -1,0 +1,45 @@
+body, html {
+    margin: 100px;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff67f;
+  }
+  
+  .mensagem {
+    position: relative;
+    height: 100%;
+    font-size: 100px;
+    color: #000000;
+    margin-top: 0; /* Adicione um espaço entre as flores e a mensagem */
+  }
+  
+  .flores {
+    position: relative;
+    text-align: center; /* Centraliza horizontalmente as flores e a mensagem */
+    display: none; /* Inicialmente escondido */
+  }
+  
+  .flores.mostrar {
+    display: block; /* Mostra as flores quando a classe 'mostrar' é adicionada */
+    animation: fadeIn 3s ease-in-out forwards; /* Adiciona animação de fadeIn */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
